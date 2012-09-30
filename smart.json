@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Filepicker/meteor",
     "author": "Liyan Chang",
     "version": "0.1.0",
-    "git": "git@github.com:Filepicker/meteor.git",
+    "git": "https://github.com/Filepicker/meteor.git",
     "packages": {}
 }
 
