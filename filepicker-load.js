@@ -10,7 +10,7 @@ var local = function(){
 //Generate a script tag
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src = '//api.filepicker.io/v0/filepicker.js';
+script.src = '//api.filepicker.io/v1/filepicker.js';
 script.onload = startup;
 script.onerror = local;
 
