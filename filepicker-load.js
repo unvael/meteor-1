@@ -1,6 +1,6 @@
 //Functions to run after the script tag has loaded
 var filepickerLoadCallback = function(){
-    //filepicker.setKey("DAVID_CHANG_API_KEY");
+    //filepicker.setKey("YOUR_API_KEY_HERE");
 };
 
 //If the script doesn't load
