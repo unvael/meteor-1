@@ -20,3 +20,22 @@ Second, add the filepicker.io smart package:
 
 - Should work offline by falling back to local uploads. Just not sure what kind of url to return.
 - Should allow you to set your apikey somehow.
+
+#### Current Improvements
+- Dynamic loading of API
+
+#### Sample Usage
+    if (Meteor.isClient) {
+      Template.hello.greeting = function () {
+      //Add your API key from filepicker
+        loadFilePicker('Ah2ncor59SkyV3OjU6MPbz');
+        return "Welcome to filepicker.";
+      };
+
+      Template.hello.events({
+        'click input' : function () {
+          if (typeof console !== 'undefined')
+            //Use the filepicker API how you'd like
+            filepicker.pick();
+        }
+      });
