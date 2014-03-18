@@ -6,7 +6,10 @@ loadFilepicker = (api_key, api_version, callback) ->
     throw new Meteor.Error 'please pass a valid api key'
 
   # make api_version + callback args optional
-  if not callback? and api_version? and _.isFunction api_version
+  if not api_version?
+    api_version = "v1"
+
+  else if not callback? and api_version? and _.isFunction api_version
     callback = api_version
     api_version = "v1"
 
