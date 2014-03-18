@@ -1,10 +1,10 @@
 {
-    "name": "filepicker",
-    "description": "A smart package that helps make it even easier to use Filepicker to upload/import and save/export content.",
-    "homepage": "https://github.com/Filepicker/meteor",
-    "author": "Liyan Chang",
-    "version": "0.3.0",
-    "git": "https://github.com/Filepicker/meteor.git",
+    "name": "filepicker-loader",
+    "description": "filepicker.io js sdk packaged for meteor.js.",
+    "homepage": "https://github.com/unvael/meteor-filepicker-loader",
+    "author": "gregorynicholas",
+    "version": "1.0.0",
+    "git": "https://github.com/unvael/meteor-filepicker-loader.git",
     "packages": {}
 }
 

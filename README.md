@@ -1,41 +1,18 @@
-### Filepicker Smart Package for Meteor
+meteor-filepicker-loader
+------------------------
 
-#### Overview
+filepicker.io js sdk packaged for meteor.js.
 
-Currently, this is a simple package that just helps insert the filepicker library into the project.
 
-#### Install
+* meteor.js (0.7.2.0): https://github.com/meteor/meteor
+* filepicker js api (v1): https://www.inkfilepicker.com
 
-First install Meteorite:
-`npm install -g meteorite`
 
-Second, add the filepicker.io smart package:
-`mrt add filepicker`
+-----
 
-#### Features
 
-- Adds the filepicker tag into the project
+### overview
 
-#### Known Potential Improvements
-
-- Should work offline by falling back to local uploads. Just not sure what kind of url to return.
-- Should allow you to set your apikey somehow.
-
-#### Current Improvements
-- Dynamic loading of API
-
-#### Sample Usage
-    if (Meteor.isClient) {
-      Template.hello.greeting = function () {
-      //Add your API key from filepicker
-        loadFilePicker('Ah2ncor59SkyV3OjU6MPbz');
-        return "Welcome to filepicker.";
-      };
-
-      Template.hello.events({
-        'click input' : function () {
-          if (typeof console !== 'undefined')
-            //Use the filepicker API how you'd like
-            filepicker.pick();
-        }
-      });
+this is a bloody simple package that exports a function to dynamically load the
+filepicker javascript library into the html `<head>`, sets the filepicker api
+key, then executes an optionally passed callback.
